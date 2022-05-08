@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cows and Bulls</title>
+	<link rel="stylesheet" href="cbcss.css"/>
+	<script type="text/javascript" src="cbjs.js"></script>
+</head>
+<body onload="reset()">
+<header>
+	<h1>Cows and Bulls</h1>
+	<nav>
+		<a href="" >New Game</a>
+		<a href="cb.html" target="_blank">Instructions</a>
+	</nav>
+</header>
+<div id="win">
+<h2>Congrats!!!
+You have completed the game</h2>
+<h3 id="turn">turns</h3>
+</div>
+<div id="start">
+	<h2>Welcome</h2>
+	
+	
+	<button onclick="start4()">Play</button>
+	
+</div>
+<main id="main">
+	<button onclick="playbullsandcows()" >Make your Guess</button>
+	<button onclick="printguess()">View Previous Guess</button>
+	<br/>
+	<table>
+		<tr><th>Guesses</th></tr>
+		<tr><td id=chance>0</td></tr>
+	</table>
+	<br/>
+	<br/>
+	<table>
+		<tr><th>Bulls</th></tr>
+		<tr><td id="bulls">0</td></tr>
+	</table>
+	<table>
+		<tr><th>Cows</th></tr>
+		<tr><td id="cows">0</td></tr>
+	</table>
+</main>
+</body>
+</html>
